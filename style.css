@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background: #957DAD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  background: #CCDCEB;
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+
+.calculator form input {
+  border: 0;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+
+form .display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+
+form .display input {
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none;
+}
+
+form input.equal {
+  width: 145px;
+}
+
+/* Media Query for screens between 480px and 768px (medium phones) */
+@media (min-width: 481px) and (max-width: 768px), 
+       (min-width: 360px) and (max-width: 360px) and (min-height: 740px) and (max-height: 740px) {
+  .calculator {
+    width: 300px;
+    padding: 18px;
+  }
+
+  .calculator form input {
+    width: 55px;
+    height: 55px;
+    font-size: 19px;
+    margin: 9px;
+  }
+
+  form .display input {
+    font-size: 40px;
+  }
+
+  form input.equal {
+    width: 130px;
+  }
+}
